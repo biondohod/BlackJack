@@ -78,9 +78,9 @@ public class BlackJack {
         String[] values = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
         String[] types = {"C", "D", "H", "S"};
 
-        for (int i = 0; i < types.length; i++) {
-            for (int j = 0; j < values.length; j++) {
-                Card card = new Card(values[j], types[i]);
+        for (String type : types) {
+            for (String value : values) {
+                Card card = new Card(value, type);
                 deck.add(card);
             }
         }
